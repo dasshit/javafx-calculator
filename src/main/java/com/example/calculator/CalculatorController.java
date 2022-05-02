@@ -7,11 +7,13 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
 import java.util.Objects;
+import java.util.logging.*;
 
 public class CalculatorController {
     @FXML
     TextField currentInput;
-
+    
+    Logger log = Logger.getLogger("CalculatorController");
     String currentBuffer = "";
     double previousBufferedValue = 0.0;
     String lastOperation = "";
@@ -21,7 +23,7 @@ public class CalculatorController {
             return Double.parseDouble(currentBuffer);
         }
         catch (java.lang.NumberFormatException e){
-            System.out.println(e.toString());
+            log.info(e.toString());
             return 0.0;
         }
     }
@@ -44,7 +46,7 @@ public class CalculatorController {
                 currentBuffer
         );
         lastOperation = newOperation;
-        System.out.println(previousBufferedValue);
+        log.info(String.valueOf(previousBufferedValue));
     }
 
     public void setCurrentInput(String value){
@@ -59,7 +61,7 @@ public class CalculatorController {
     @FXML
     public void onKeyPressed(KeyEvent keyEvent){
 
-        System.out.println(keyEvent);
+        log.info(String.valueOf(keyEvent));
 
         switch (keyEvent.getCode()){
             case DIGIT0, DIGIT1,
@@ -85,14 +87,14 @@ public class CalculatorController {
                 }
             }
             default -> {
-                System.out.println("Doing nothing");
+                log.info("Doing nothing");
             }
         }
     }
 
     @FXML
     public void onNumberButtonClick(MouseEvent mouseEvent) {
-        System.out.println(mouseEvent);
+        log.info(String.valueOf(mouseEvent));
 
         setCurrentInput(
                 ((Button) mouseEvent.getSource()).getText()
@@ -100,7 +102,7 @@ public class CalculatorController {
     }
     @FXML
     public void onOperationButtonClick(MouseEvent mouseEvent) {
-        System.out.println(mouseEvent);
+        log.info(String.valueOf(mouseEvent));
 
         String buttonText = ((Button) mouseEvent.getSource()).getText();
         executeLastOperation(buttonText);

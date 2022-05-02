@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f4e4c8f-b417-485e-9bb5-915289812231" name="Changes" comment="Iniatial commit">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="6f4e4c8f-b417-485e-9bb5-915289812231" name="Changes" comment="Added KeyPressedEvent support">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/calculator/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/calculator/main-scene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651451920232</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added KeyPressedEvent support">
+      <created>1651454503545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651454503545</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,18 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Iniatial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iniatial commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorController.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added KeyPressedEvent support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added KeyPressedEvent support" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
