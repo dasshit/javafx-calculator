@@ -6,6 +6,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
+
 import com.jthemedetecor.*;
 
 public class CalculatorApplication extends Application {
@@ -17,7 +19,8 @@ public class CalculatorApplication extends Application {
 
         if (detector.isDark()){
             scene.getStylesheets().add(
-                    CalculatorApplication.class.getResource("main-scene.css").toExternalForm());
+                    Objects.requireNonNull(
+                            CalculatorApplication.class.getResource("main-scene.css")).toExternalForm());
         }
 
         stage.setTitle("Calculator");
@@ -29,7 +32,8 @@ public class CalculatorApplication extends Application {
         detector.registerListener(isDark -> {
             if (isDark){
                 scene.getStylesheets().add(
-                        CalculatorApplication.class.getResource("main-scene.css").toExternalForm());
+                        Objects.requireNonNull(
+                                CalculatorApplication.class.getResource("main-scene.css")).toExternalForm());
             }else{
                 scene.getStylesheets().remove(0);
             }
