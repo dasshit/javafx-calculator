@@ -91,7 +91,14 @@ public class CalculatorController {
                     setCurrentInput(keyEvent.getText());
                 }
             }
-            case COMMA, PERIOD -> setCurrentInput(".");
+            case COMMA, PERIOD -> {
+                boolean isCommaEnd = currentBuffer.endsWith(".");
+                if (!isCommaEnd && !Objects.equals(currentBuffer, "")){
+                    setCurrentInput(".");
+                } else if (Objects.equals(currentBuffer, "")) {
+                    setCurrentInput("0.");
+                }
+            }
             // Для математических знаков
             case PLUS, MINUS,
                     MULTIPLY, DIVIDE, SLASH -> executeLastOperation(keyEvent.getText());

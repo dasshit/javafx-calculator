@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f4e4c8f-b417-485e-9bb5-915289812231" name="Changes" comment="Added light/dark theme switch support">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6f4e4c8f-b417-485e-9bb5-915289812231" name="Changes" comment="Added double support for input">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651458121135</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added double support for input">
+      <created>1651458595268</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651458595268</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,7 +157,8 @@
     <MESSAGE value="Added comments" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Added light/dark theme switch support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added light/dark theme switch support" />
+    <MESSAGE value="Added double support for input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added double support for input" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
