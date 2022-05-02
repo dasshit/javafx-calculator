@@ -18,10 +18,18 @@ public class CalculatorController {
     double previousBufferedValue = 0.0;
     String lastOperation = "";
 
+    public double parseDouble(String value) {
+        try{
+            return Double.parseDouble(value);
+        } catch (NumberFormatException e) {
+            return Double.parseDouble(value + "0");
+        }
+    }
+
     public double parseBuffer(){
         // Приводим строку в буффере к double
         try {
-            return Double.parseDouble(currentBuffer);
+            return parseDouble(currentBuffer);
         }
         catch (java.lang.NumberFormatException e){
             // Если возникает ошибка парсинга строки - отдаем ноль
@@ -67,6 +75,7 @@ public class CalculatorController {
     public void onKeyPressed(KeyEvent keyEvent){
         // Обрабатываем нажатия клавиш
         log.info(String.valueOf(keyEvent));
+
         switch (keyEvent.getCode()){
             //Для нажатия на цифры
             case DIGIT0, DIGIT1,
@@ -82,6 +91,7 @@ public class CalculatorController {
                     setCurrentInput(keyEvent.getText());
                 }
             }
+            case COMMA, PERIOD -> setCurrentInput(".");
             // Для математических знаков
             case PLUS, MINUS,
                     MULTIPLY, DIVIDE, SLASH -> executeLastOperation(keyEvent.getText());

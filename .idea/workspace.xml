@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f4e4c8f-b417-485e-9bb5-915289812231" name="Changes" comment="Updated README.md">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/calculator/main-scene.css" afterDir="false" />
+    <list default="true" id="6f4e4c8f-b417-485e-9bb5-915289812231" name="Changes" comment="Added light/dark theme switch support">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/CalculatorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651455768373</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added light/dark theme switch support">
+      <created>1651458121135</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651458121135</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +150,8 @@
     <MESSAGE value="Added logging" />
     <MESSAGE value="Added comments" />
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="Added light/dark theme switch support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added light/dark theme switch support" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
