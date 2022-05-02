@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.calculator.HelloController">
+      fx:controller="com.example.calculator.CalculatorController">
    <Pane maxHeight="-Infinity" maxWidth="-Infinity"
          minHeight="-Infinity" minWidth="-Infinity"
          prefHeight="390.0" prefWidth="330.0"

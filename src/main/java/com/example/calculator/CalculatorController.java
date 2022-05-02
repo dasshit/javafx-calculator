@@ -7,7 +7,7 @@ import javafx.scene.input.MouseEvent;
 
 import java.util.Objects;
 
-public class HelloController {
+public class CalculatorController {
     @FXML
     TextField currentInput;
 
