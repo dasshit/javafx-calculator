@@ -136,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651458595268</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added double support for input">
+      <created>1651459039815</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651459039815</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added double support for input">
+      <created>1651459073404</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651459073404</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
