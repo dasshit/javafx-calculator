@@ -17,7 +17,8 @@
          prefHeight="390.0" prefWidth="330.0"
          style="-fx-border-radius: 20; -fx-background-radius-fx-background-radius: 20;"
          xmlns="http://javafx.com/javafx/18"
-         xmlns:fx="http://javafx.com/fxml/1">
+         xmlns:fx="http://javafx.com/fxml/1"
+   onKeyPressed="#onKeyPressed">
       <children>
          <GridPane gridLinesVisible="true"
                    layoutX="5.0" layoutY="66.0"

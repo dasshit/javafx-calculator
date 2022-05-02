@@ -3,6 +3,7 @@ package com.example.calculator;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
 import java.util.Objects;
@@ -46,7 +47,7 @@ public class CalculatorController {
         System.out.println(previousBufferedValue);
     }
 
-    public void setCurrentInput(int value){
+    public void setCurrentInput(String value){
 
         currentBuffer = currentBuffer + value;
 
@@ -56,14 +57,45 @@ public class CalculatorController {
     }
 
     @FXML
+    public void onKeyPressed(KeyEvent keyEvent){
+
+        System.out.println(keyEvent);
+
+        switch (keyEvent.getCode()){
+            case DIGIT0, DIGIT1,
+                    DIGIT2, DIGIT3,
+                    DIGIT4, DIGIT5,
+                    DIGIT6, DIGIT7,
+                    DIGIT9 -> setCurrentInput(keyEvent.getText());
+            case DIGIT8 -> {
+                if (keyEvent.isShiftDown()){
+                    executeLastOperation(keyEvent.getText());
+                } else {
+                    setCurrentInput(keyEvent.getText());
+                }
+            }
+            case PLUS, MINUS,
+                    MULTIPLY, DIVIDE, SLASH -> executeLastOperation(keyEvent.getText());
+            case EQUALS, ENTER, BACK_SPACE -> {
+                executeLastOperation(keyEvent.getText());
+                if (Objects.equals(keyEvent.getText(), "=") || Objects.equals(keyEvent.getText(), "\r")){
+                    currentInput.setText(
+                            Double.toString(previousBufferedValue)
+                    );
+                }
+            }
+            default -> {
+                System.out.println("Doing nothing");
+            }
+        }
+    }
+
+    @FXML
     public void onNumberButtonClick(MouseEvent mouseEvent) {
         System.out.println(mouseEvent);
 
-        String buttonText = ((Button) mouseEvent.getSource()).getText();
         setCurrentInput(
-                Integer.parseInt(
-                        buttonText
-                )
+                ((Button) mouseEvent.getSource()).getText()
         );
     }
     @FXML
