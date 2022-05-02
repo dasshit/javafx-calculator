@@ -67,7 +67,7 @@ public class CalculatorController {
         currentBuffer = currentBuffer + value;
         // Обновляем значение в инпуте
         currentInput.setText(
-                String.valueOf(parseBuffer())
+                currentBuffer
         );
     }
 
